@@ -2,7 +2,8 @@
 
 Vibration-based bearing fault detection and Remaining Useful Life (RUL) estimation using real run-to-failure sensor data from industrial test rigs.
 
-Classifies bearing faults across 4 failure modes with 90%+ accuracy and estimates time-to-failure using a CNN-LSTM model trained on raw accelerometer signals.
+Classifies bearing faults across 4 failure modes with 99% accuracy (F1: 0.99 macro avg)
+
 
 ---
 
@@ -31,8 +32,8 @@ Unexpected bearing failures cause unplanned downtime in industrial machinery. Vi
 
 ## Results
 
-- 90%+ fault classification accuracy across 4 bearing conditions on held-out CWRU test set
-- Health index detects degradation onset an average of X hours before failure (updated after build)
+- 99% fault classification accuracy across 4 bearing conditions on held-out test set (1,878 samples)
+- Perfect recall on Normal and Inner Race conditions; Ball fault recall 98%
 - Dashboard provides actionable maintenance window recommendation per bearing
 
 ---
